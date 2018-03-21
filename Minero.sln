@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 5.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minero", "Minero\Minero.csproj", "{A10B451C-BE85-401B-A21E-54B6AD61CC0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minero.Tests", "Minero.Tests\Minero.Tests.csproj", "{1A16691E-9291-4BD6-AD2E-2A0121ABE9AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A10B451C-BE85-401B-A21E-54B6AD61CC0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A10B451C-BE85-401B-A21E-54B6AD61CC0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A10B451C-BE85-401B-A21E-54B6AD61CC0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A10B451C-BE85-401B-A21E-54B6AD61CC0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A16691E-9291-4BD6-AD2E-2A0121ABE9AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A16691E-9291-4BD6-AD2E-2A0121ABE9AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A16691E-9291-4BD6-AD2E-2A0121ABE9AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A16691E-9291-4BD6-AD2E-2A0121ABE9AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
