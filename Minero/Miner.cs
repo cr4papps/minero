@@ -39,18 +39,13 @@ namespace Minero
             if (Environment.ProcessorCount > 4) {
                 cpuMiner = "cpuminer\\cpuminer-gw64-corei7.exe";
             }
-            var process = GetProcess(cpuMiner, miningInfo);
-            process.Start();
-            process.BeginOutputReadLine();
-        }
-        
-        string GetMinerFileName(string miningInfo)
-        {
-            if (miningInfo.StartsWith("-a lyra2z", StringComparison.CurrentCulture)) {
-                return "cpuminer\\cpuminer-gw64-core2.exe";
-            } else {
-                return "cgminer\\cgminer.exe";
-            }
+            var cpuProcess = GetProcess(cpuMiner, miningInfo);
+            cpuProcess.Start();
+            cpuProcess.BeginOutputReadLine();
+            
+            var gpuProcess = GetProcess("ccminer\\ccminer-x64.exe", miningInfo);
+            gpuProcess.Start();
+            gpuProcess.BeginOutputReadLine();
         }
         
         Process GetProcess(string minerFileName, string arguments)
