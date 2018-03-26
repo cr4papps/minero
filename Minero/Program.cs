@@ -15,7 +15,6 @@ namespace Minero
                 } else {
                     Console.Write("Empty mining info, nothing to do. ");
                 }
-                Console.Write("Press any key to continue...");
                 Console.ReadLine();
             } catch (Exception ex) {
                 Console.WriteLine("[ERROR]: " + ex.Message);
